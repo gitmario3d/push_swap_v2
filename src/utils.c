@@ -6,7 +6,7 @@
 /*   By: malena-b <mario3d93@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 14:31:27 by malena-b          #+#    #+#             */
-/*   Updated: 2024/04/29 14:40:43 by malena-b         ###   ########.fr       */
+/*   Updated: 2024/05/02 11:47:23 by malena-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,6 @@ void	ft_check_errors(int error_check, t_info *info)
 {
 	if (error_check == 0)
 		free_and_report("Error", info);
+	else if (error_check == 2)
+		free_and_report("", info);
 }

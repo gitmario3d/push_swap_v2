@@ -6,7 +6,7 @@
 /*   By: malena-b <mario3d93@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 12:18:48 by malena-b          #+#    #+#             */
-/*   Updated: 2024/04/25 11:25:42 by malena-b         ###   ########.fr       */
+/*   Updated: 2024/05/02 11:51:51 by malena-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,8 +59,6 @@ void	free_and_report(char *str, t_info *info)
 		info = NULL;
 	}
 	if (ft_strlen(str) > 0)
-	{
 		ft_printf("%s\n", str);
-		exit (0);
-	}
+	exit (0);
 }

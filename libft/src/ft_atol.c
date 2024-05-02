@@ -6,13 +6,13 @@
 /*   By: malena-b <mario3d93@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 12:49:16 by malena-b          #+#    #+#             */
-/*   Updated: 2024/02/22 12:01:52 by malena-b         ###   ########.fr       */
+/*   Updated: 2024/05/02 11:39:43 by malena-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-static int	ft_normatoi(long result, long i, long sign, const char	*str)
+static long	ft_normatoi(long long result, long i, long long sign, char	*str)
 {
 	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 		i++;
@@ -39,13 +39,13 @@ static int	ft_normatoi(long result, long i, long sign, const char	*str)
 
 long	ft_atol(const char *str)
 {
-	long	result;
-	long	i;
-	long	sign;
+	long long	result;
+	long long	i;
+	long long	sign;
 
 	result = 0;
 	sign = 1;
 	i = 0;
-	result = ft_normatoi(result, i, sign, str);
+	result = ft_normatoi(result, i, sign, (char *)str);
 	return (result);
 }

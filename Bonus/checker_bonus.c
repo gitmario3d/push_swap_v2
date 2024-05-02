@@ -6,11 +6,16 @@
 /*   By: malena-b <mario3d93@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 11:45:21 by malena-b          #+#    #+#             */
-/*   Updated: 2024/04/29 14:42:41 by malena-b         ###   ########.fr       */
+/*   Updated: 2024/05/02 12:19:28 by malena-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./push_swap_bonus.h"
+
+/*void	ft_leaks(void)
+{
+	system("leaks -q checker");
+}*/
 
 static void	ft_identify_calls(char *line, t_info *info)
 {
